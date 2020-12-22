@@ -16,5 +16,7 @@ and make HttpPost request to http://localhost:5001/api/customers/
 
 You can find a working demo here : https://fnz.azurewebsites.net/api/customers/
 
+To see an average age breakdown by genders :  https://fnz.azurewebsites.net/api/customers/report
+
 # Console Application version of the API above 
 ![Console App output](https://github.com/ashrafulhaque89/fnz/blob/master/Console%20Application/ConsoleApp.png)
