@@ -61,7 +61,7 @@ namespace DesignSolution
             Program program = new Program();
             List<Customers> Customers_list = new List<Customers>();
             program.AddCustomer(Customers_list, "John", "Rowley", new DateTime(1978, 2, 5), "Male");
-            program.AddCustomer(Customers_list, "Declan", "Munroe", new DateTime(1992, 4, 6), "Female");
+            program.AddCustomer(Customers_list, "Declan", "Munroe", new DateTime(1992, 4, 6), "Male");
             program.AddCustomer(Customers_list, "Colm", "O'hara", new DateTime(2003, 3, 15), "Male");
             program.AddCustomer(Customers_list, "Mona", "Kerry", new DateTime(1998, 2, 23), "Female");
             program.AddCustomer(Customers_list, "Alice", "Wok", new DateTime(2000, 3, 23), "Female");
