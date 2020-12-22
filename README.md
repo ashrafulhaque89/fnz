@@ -5,7 +5,7 @@ You will need Microsoft Visual Studio to run this solution project or you can us
 This API has full CRUD functionalities with 3 endpoints: 
 1. api/customers : Shows list of Customers
 2. api/customers/id : Shows customer by Customer's Id
-3. api/customers/report : Shows a breakdown of average customer ages by Genders
+3. api/customers/report : Shows a breakdown of average customer ages by customers' Genders
 
 - To run the app, use - dotnet run - command in the CLI
 - Get List of Customers http://localhost:5000/api/customers/
@@ -29,8 +29,14 @@ JSON
 - To see the average age breakdown by Customers' gender, head towards http://localhost:5000/api/customers/report
 
 
-You can find a working demo here : https://fnz.azurewebsites.net/api/customers/
-To see an average age breakdown by genders :  https://fnz.azurewebsites.net/api/customers/report
+Working demo : https://fnz.azurewebsites.net/api/customers/
+----
 
-# Console Application version of the API above 
+Average age breakdown by genders :  https://fnz.azurewebsites.net/api/customers/report
+----
+----
+# Console Application version of the API
+
+Made a Console App version of this API. A method driven and simple implemenation approach was followed. Here is a screenshot from the Console output window:
+
 ![Console App output](https://github.com/ashrafulhaque89/fnz/blob/master/Console%20Application/ConsoleApp.png)
