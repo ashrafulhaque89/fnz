@@ -17,4 +17,4 @@ and make HttpPost request to http://localhost:5001/api/customers/
 You can find a working demo here : https://fnz.azurewebsites.net/api/customers/
 
 # Console Application version of the API above 
-![Customers' List with Average Age brekdown based on gender](/../Console Application/customers_list.png)
+![Customers' List with Average Age brekdown based on gender](https://github.com/ashrafulhaque89/fnz/blob/master/Console%20Application/customers_list.png)
