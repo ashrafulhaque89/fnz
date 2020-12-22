@@ -1,4 +1,4 @@
-# A Simple CRUD API built with in NET5 (.NET Core 5)
+# A Simple CRUD API built with NET5 (.NET Core 5)
 1. To update send HttpPut request to http://localhost:5001/api/customers/
 2. View list by id http://localhost:5001/api/customers/5
 3. Delete item by http://localhost:5001/api/customers/5
@@ -15,3 +15,6 @@
 and make HttpPost request to http://localhost:5001/api/customers/
 
 You can find a working demo here : https://fnz.azurewebsites.net/api/customers/
+
+# Console Application version of the API above 
+![Customers' List with Average Age brekdown based on gender](/../Console Application/customers_list.png)
