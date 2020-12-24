@@ -26,18 +26,20 @@ namespace DesignSolution
             }
         }
 
+        public static int getCount(List<Customers> customers, string gender)
+        {
+            return customers.Where(x => x.Gender == gender).Count();
+        }
+
         public static int CalculateAverage(Customers[] customers, string gender)
         {
             return (int)(DateTime.Now.Year - customers.Where(x => x.Gender == gender).Select(x => x.DOB.Year).ToArray().Average());
         }
 
-        public void PrintReport(int Average, string gender)
+        public void PrintReport(int Average, string gender, int count)
         {
             Console.WriteLine();
-            Console.WriteLine($"   {gender} Average Age:");
-            Console.WriteLine();
-            Console.WriteLine("          " + Average);
-            Console.WriteLine();
+            Console.WriteLine($"   {gender} Average Age: " + Average + $" (Total {gender} count: " + count + ")");
         }
 
         public void PrintCustomerList(List<Customers> customers)
@@ -52,7 +54,6 @@ namespace DesignSolution
                 Console.WriteLine("   DOB : " + item.DOB);
                 Console.WriteLine("   Age : " + item.Current_Age);
                 Console.WriteLine("   Gender : " + item.Gender);
-                Console.WriteLine();
             }
         }
 
@@ -67,9 +68,9 @@ namespace DesignSolution
             program.AddCustomer(Customers_list, "Alice", "Wok", new DateTime(2000, 3, 23), "Female");
             program.AddCustomer(Customers_list, "Blake", "Bailley", new DateTime(1995, 12, 13), "Other");
             program.PrintCustomerList(Customers_list);
-            program.PrintReport(CalculateAverage(Customers_list.ToArray(), "Male"), "Male");
-            program.PrintReport(CalculateAverage(Customers_list.ToArray(), "Female"), "Female");
-            program.PrintReport(CalculateAverage(Customers_list.ToArray(), "Other"), "Other");
+            program.PrintReport(CalculateAverage(Customers_list.ToArray(), "Male"), "Male",getCount(Customers_list,"Male"));
+            program.PrintReport(CalculateAverage(Customers_list.ToArray(), "Female"), "Female", getCount(Customers_list, "Female"));
+            program.PrintReport(CalculateAverage(Customers_list.ToArray(), "Other"), "Other", getCount(Customers_list, "Other"));
             Console.ReadKey();
         }
     }
