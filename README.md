@@ -27,13 +27,6 @@ JSON
 - To update Customers list, take above sturcture and make HttpPut call to http://localhost:5000/api/customers/
 - The list shows AGE of each customer which is dynamically calculated from the Customer's Date of Birth
 - To see the average age breakdown by Customers' gender, head towards http://localhost:5000/api/customers/report
-
-
-Working demo : https://fnz.azurewebsites.net/api/customers/
-----
-
-Average age breakdown by genders :  https://fnz.azurewebsites.net/api/customers/report
-----
 ----
 # Console Application version of the API
 
